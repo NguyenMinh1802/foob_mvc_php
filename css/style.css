@@ -1,0 +1,24 @@
+.khung_mon {
+    width: calc(25% - 20px); /* Sử dụng calc để tính toán độ rộng, trừ đi khoảng cách giữa các ô */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.khung_mon:last-child {
+    margin-right: 0; /* Loại bỏ margin phải của ô cuối cùng để tránh lề thừa */
+}
+
+.khung_mon img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 120px;
+}
+
+/* Sử dụng Flexbox để hiển thị các mục trên cùng một hàng */
+.mon-an-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Canh đều các mục trên hàng */
+}
